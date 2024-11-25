@@ -23,6 +23,9 @@
                 <button class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition">
                     Sign In
                 </button>
+                <button class="border border-purple-600 text-purple-600 px-4 py-2 rounded-full hover:bg-purple-600 hover:text-white transition">
+                    Login
+                </button>                
             </nav>
         </div>
     </header>
