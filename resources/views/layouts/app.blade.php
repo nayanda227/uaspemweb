@@ -15,18 +15,38 @@
             <div class="text-xl font-bold text-purple-600">Focka</div>
             
             <!-- Menu di Kanan -->
-            <nav class="flex space-x-6 items-center">
-                <a href="#" class="text-black hover:text-purple-300 transition">Home</a>
-                <a href="#" class="text-black hover:text-purple-300 transition">About Us</a>
-                <a href="#" class="text-black hover:text-purple-300 transition">Courses</a>
-                <a href="#" class="text-black hover:text-purple-300 transition">Contact Us</a>
-                <button class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition">
-                    Sign In
-                </button>
-                <button class="border border-purple-600 text-purple-600 px-4 py-2 rounded-full hover:bg-purple-600 hover:text-white transition">
-                    Login
-                </button>                
-            </nav>
+            <nav class="flex justify-center items-center space-x-6">
+                <ul class="flex items-center space-x-6 list-none">
+                    <li class="nav-item flex items-center">
+                        <a href="{{ Route('home') }}" class="text-black hover:text-purple-300 transition">Home</a>
+                    </li>
+                    <li class="nav-item flex items-center">
+                        <a href="{{ Route('about') }}" class="text-black hover:text-purple-300 transition">About Us</a>
+                    </li>
+                    <li class="nav-item flex items-center">
+                        <a href="{{ Route('course') }}" class="text-black hover:text-purple-300 transition">Courses</a>
+                    </li>
+                    <li class="nav-item flex items-center">
+                        <a href="{{ Route('contact') }}" class="text-black hover:text-purple-400 transition">Contact Us</a>
+                    </li>
+                    <!-- Tombol Sign In -->
+                    <li class="nav-item flex items-center">
+                        <a href="{{ Route('register') }}">
+                            <button class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition">
+                                Sign Up
+                            </button>
+                        </a>
+                    </li>
+                    <!-- Tombol Login -->
+                    <li class="nav-item flex items-center">
+                        <a href="{{ Route('login') }}">
+                            <button class="border border-purple-500 text-purple-500 px-4 py-2 rounded-full hover:bg-purple-600 hover:text-white transition">
+                                Login
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>            
         </div>
     </header>
 
