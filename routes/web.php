@@ -3,23 +3,23 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home'); // Pastikan file Blade `home.blade.php` ada di `resources/views`
+    return view('home'); 
 })->name('home');
 
 Route::get('/about', function () {
-    return view('about'); // Pastikan file Blade `about.blade.php` ada
+    return view('about'); 
 })->name('about');
 
 Route::get('/course', function () {
-    return view('course'); // Tambahkan file Blade `course.blade.php` jika belum
+    return view('course'); 
 })->name('course');
 
 Route::get('/contact', function () {
-    return view('contact'); // Pastikan file Blade `contact.blade.php` ada
+    return view('contact'); 
 })->name('contact');
 Route::get('/register', function () {
-    return view('register'); // Pastikan file Blade `contact.blade.php` ada
+    return view('register'); 
 })->name('register');
 Route::get('/login', function () {
-    return view('login'); // Pastikan file Blade `contact.blade.php` ada
+    return view('login'); 
 })->name('login');
