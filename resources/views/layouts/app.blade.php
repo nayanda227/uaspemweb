@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Focka')</title>
     @vite('resources/css/app.css') {{-- Tailwind CSS --}}
 </head>
+
 <body class="bg-white text-gray-800">
 
     <!-- Navbar -->
@@ -13,7 +15,7 @@
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <!-- Logo di Kiri -->
             <div class="text-xl font-bold text-purple-600">Focka</div>
-            
+
             <!-- Menu di Kanan -->
             <nav class="flex justify-center items-center space-x-6">
                 <ul class="flex items-center space-x-6 list-none">
@@ -63,4 +65,5 @@
     </footer>
 
 </body>
+
 </html>
