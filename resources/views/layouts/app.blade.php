@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Focka')</title>
+    <title>@yield('title', 'Gradify')</title>
     @vite('resources/css/app.css') {{-- Tailwind CSS --}}
 </head>
-
 <body class="bg-white text-gray-800">
 
     <!-- Navbar -->
     <header class="absolute w-full">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <!-- Logo di Kiri -->
-            <div class="text-xl font-bold text-purple-600">Focka</div>
-
+            <div class="text-2xl font-bold text-purple-600">Gradify</div>
+            
             <!-- Menu di Kanan -->
             <nav class="flex justify-center items-center space-x-6">
                 <ul class="flex items-center space-x-6 list-none">
@@ -60,10 +58,9 @@
     <!-- Footer -->
     <footer class="bg-purple-500 text-white py-8 mt-8">
         <div class="container mx-auto text-center">
-            <p>Focka All Right Reserved, 2022</p>
+            <p>Gradify All Right Reserved, 2022</p>
         </div>
     </footer>
 
 </body>
-
 </html>
