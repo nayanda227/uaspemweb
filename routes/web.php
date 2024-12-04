@@ -23,3 +23,6 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('login'); 
 })->name('login');
+Route::get('/membership', function () {
+    return view('membership'); 
+})->name('membership');

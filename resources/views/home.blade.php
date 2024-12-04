@@ -40,62 +40,61 @@
 </section>
 
     <!-- To-Do List Section -->
-    <section class="py-20">
+    <section class="py-16">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <!-- Kolom Gambar -->
             <div class="md:w-1/2 flex justify-center md:justify-start">
-                <img src="{{ asset('images/globe.png') }}" alt="Globe" class="w-[400px] h-auto">
+                <img src="{{ asset('images/piala.png') }}" alt="Piala" class="w-[400px] md:w-[500px] h-auto">
             </div>
-            <div class="md:w-1/2 text-center md:text-right mt-8 md:mt-0">
-                <!--CountDown-->
-                <h2 class="text-2xl md:text-2xl font-bold text-gray-800 leading-tight text-center">
+            <!-- Kolom Konten -->
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <!-- Judul -->
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center md:text-center">
                     Countdown SNBT 2025
                 </h2>
-                <div class="mt-4 bg-purple-200 rounded-lg flex items-center p-4">
-                    <div class="w-1/4 h-16 flex items-center justify-center rounded-md">
-                        <img src="{{ asset('images/calender.png') }}" alt="Calendar" class="w-[100px] h-auto">
+                <!-- Countdown Card -->
+                <div class="bg-purple-200 rounded-lg p-4 flex items-center mb-6">
+                    <div class="w-16 h-16 flex items-center justify-center bg-white rounded-md mr-4">
+                        <img src="{{ asset('images/calender.png') }}" alt="Calendar" class="w-16 h-16">
                     </div>
-                    <div class="flex-1 flex items-center">
-                        <div class="flex flex-col justify-center">
-                            <p class="text-lg font-semibold text-gray-800 mr-5">UTBK</p>
-                            <p class="text-sm text-gray-600">2025.04.05</p>
-                        </div>
-                    </div>                               
+                    <div class="flex-1">
+                        <p class="text-lg font-semibold text-gray-800">UTBK</p>
+                        <p class="text-sm text-gray-600">2025.04.05</p>
+                    </div>
                     <div class="text-right">
                         <p class="text-lg font-bold text-gray-800">D-240</p>
                     </div>
-                </div> 
-                <div class="mt-4 bg-pink-200 rounded-lg flex items-center p-4">
-                    <div class="flex-1 flex items-center justify-center">
-                        <p class="text-lg font-normal text-gray-500 font-sans text-center">
-                            "Success is the sum of small efforts, repeated day in and day out." — Robert Collier
-                        </p>
-                    </div>
-                </div>              
-                <div class="my-8"></div>
-                <div class="mt-4 bg-purple-100 rounded-lg p-4">
-                    <div class="rounded-lg p-4">
-                        <div class="flex items-center mb-4">
+                </div>
+                <!-- Quote Card -->
+                <div class="bg-pink-200 rounded-lg p-4 mb-6">
+                    <p class="text-lg font-normal text-gray-500 font-sans text-center">
+                        "Success is the sum of small efforts, repeated day in and day out." — Robert Collier
+                    </p>
+                </div>
+                <!-- Task List -->
+                <div class="bg-purple-100 rounded-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Tugas Hari Ini</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
                             <input type="checkbox" id="task1" name="task" class="mr-2">
-                            <label for="task1" class="text-lg font-semibold text-gray-800">Mengerjakan Penalaran Umum</label>
+                            <label for="task1" class="text-sm font-semibold text-gray-800">Mengerjakan Penalaran Umum</label>
+                            <span class="text-sm text-gray-600 ml-auto">10:00 AM</span>
                         </div>
-                        <p class="text-sm text-gray-600 mb-4">Today at 10.00 AM</p>
-                        
-                        <div class="flex items-center mb-4">
+                        <div class="flex items-center">
                             <input type="checkbox" id="task2" name="task" class="mr-2">
-                            <label for="task2" class="text-lg font-semibold text-gray-800">Mengerjakan Penalaran Matematika</label>
+                            <label for="task2" class="text-sm font-semibold text-gray-800">Mengerjakan Penalaran Matematika</label>
+                            <span class="text-sm text-gray-600 ml-auto">11:00 AM</span>
                         </div>
-                        <p class="text-sm text-gray-600 mb-4">Today at 11.00 AM</p>
-                        
                         <div class="flex items-center">
                             <input type="checkbox" id="task3" name="task" class="mr-2">
-                            <label for="task3" class="text-lg font-semibold text-gray-800">Mengerjakan Literasi Bahasa Indonesia</label>
+                            <label for="task3" class="text-sm font-semibold text-gray-800">Mengerjakan Literasi Bahasa Indonesia</label>
+                            <span class="text-sm text-gray-600 ml-auto">01:00 PM</span>
                         </div>
-                        <p class="text-sm text-gray-600">Today at 13.00 AM</p>
                     </div>
-                </div>                             
+                </div>
             </div>
         </div>
-    </section>    
+    </section>        
 
     <!-- Categories Section -->
     <section class="py-16">
@@ -241,50 +240,133 @@
             <h2 class="text-2xl font-bold text-gray-800 mb-1">Info Universitas</h2>
             <p class="text-sm text-gray-600 mt-4">Cari Tahu Universitas impianmu!!</p>
         </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-6">
-            <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
-                <!-- Gradient Background -->
-                <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-[#a92f4b] rounded-b-[10px] z-0"></div>
-                <!-- Gambar -->
-                <img class="w-[80px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/undip.png') }}" alt="Logo Undip" />
-                <!-- Teks -->
-                <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
-                    Universitas Diponegoro
+        <!-- Kontainer Scroll -->
+        <div class="overflow-x-scroll flex gap-6 pb-4">
+            <div class="flex gap-6">
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-purple-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[80px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/undip.png') }}" alt="Logo Undip" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Diponegoro
+                    </div>
                 </div>
-            </div>
-            <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
-                <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-blue-400 rounded-b-[10px] z-0"></div>
-                <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/UB.png') }}" alt="Logo UB" />
-                <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
-                    Universitas Brawijaya
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-blue-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/UB.png') }}" alt="Logo UB" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Brawijaya
+                    </div>
                 </div>
-            </div>
-            <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
-                <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-yellow-400 rounded-b-[10px] z-0"></div>
-                <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/UI.png') }}" alt="Logo UI" />
-                <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
-                    Universitas Indonesia
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-purple-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/UI.png') }}" alt="Logo UI" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Indonesia
+                    </div>
                 </div>
-            </div>
-            <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
-                <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-orange-400 rounded-b-[10px] z-0"></div>
-                <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/UGM.png') }}" alt="Logo UGM" />
-                <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
-                    Universitas Gajah Mada
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-blue-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/UGM.png') }}" alt="Logo UGM" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Gajah Mada
+                    </div>
                 </div>
-            </div>
-            <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
-                <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-green-500 rounded-b-[10px] z-0"></div>
-                <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/UNHAS.png') }}" alt="Logo UNHAS" />
-                <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
-                    Universitas Hasanudin
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-purple-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/UNHAS.png') }}" alt="Logo UNHAS" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Hasanudin
+                    </div>
                 </div>
-            </div>
-            <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
-                <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-purple-300 rounded-b-[10px] z-0"></div>
-                <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/UNAIR.png') }}" alt="Logo UNAIR" />
-                <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
-                    Universitas Airlangga
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-blue-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="{{ asset('images/UNAIR.png') }}" alt="Logo UNAIR" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Airlangga
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-purple-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://pelajarinfo.id/wp-content/uploads/2021/03/Institut-Teknologi-Bandung-Logo-768x768.png" alt="Logo UNAIR" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Institut Teknologi Bandung
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-blue-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-1024x1024.png" alt="Logo UNAIR" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Institut Teknoloogi Sepuluh Nopember
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-purple-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://belajargiat.id/wp-content/uploads/2020/11/logo-um.png" alt="Logo UM" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Negeri Malang
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-blue-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://4.bp.blogspot.com/-gFpQfTHcWd8/VmYV021zP_I/AAAAAAAACXY/smZddtUROqg/s1600/unesa.png" alt="Logo UNAIR" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Negeri Surabaya
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-purple-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://th.bing.com/th/id/R.1afa0d00e9bbd3be54a74156993c8ab3?rik=4YScZQRHhUHjMw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-8Avy5q36Vxc%2fUdXmW5yQgII%2fAAAAAAAAFhE%2ffIoBRrKx5KA%2fs1600%2fbm-image-735514.png&ehk=SPTcSki%2biLBjoKNz%2bjQvg8dqsVtLX2OR9U2uKEAopro%3d&risl=&pid=ImgRaw&r=0" alt="Logo UNAIR" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Padjajaran
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-blue-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://belajargiat.id/wp-content/uploads/2020/12/logo-unsoed.png" alt="Logo UNSOED" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Jenderal Soedirman 
+                    </div>
+                </div><div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-purple-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://1.bp.blogspot.com/-GMfy95G5L5c/W2bwrpAeXoI/AAAAAAAAAYs/f5fhp5BhdZQd4bTguafQCu4nIg8rYR8igCEwYBhgL/s1600/Logo%2BUniversitas%2BNegeri%2BYogyakarta%2B%2528UNY%2529%2BCDR%2Bdan%2BPNG.png" alt="Logo UNY" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Negeri Yogyakarta 
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-blue-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://i2.wp.com/1.bp.blogspot.com/-fmZfkef9ZPg/XT2g-nfelwI/AAAAAAAAAI4/sgqx4t1ZKkkYJTMAfm4vyJbFbt91XWVmgCLcBGAs/s1600/8.UNS.png" alt="Logo UNNES" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Sebelas Maret 
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-purple-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://4.bp.blogspot.com/-c4s0380dYdo/V1tD_FBY2xI/AAAAAAAAJK8/73-IXav-aw0Fdl59prZjA5ztMKWeuBpCwCLcB/s1600/Logo-Universitas-Udayana-Bali.png" alt="Logo UNUD" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Udayana
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-blue-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://2.bp.blogspot.com/-EQNsLJiDxwg/VsLDDzUxdNI/AAAAAAAAERo/kO_RI7laz0g/s1600/logo%2Busu%2Buntuk%2Bsemua.png" alt="Logo USU" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Universitas Sumatera Utara
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-purple-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bogor_Agricultural_University_(IPB)_symbol.svg/1200px-Bogor_Agricultural_University_(IPB)_symbol.svg.png" alt="Logo UNAIR" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Institut Pertanian Bogor 
+                    </div>
+                </div>
+                <div class="w-[150px] h-[140px] relative bg-white rounded-[10px] shadow">
+                    <div class="absolute inset-x-0 bottom-0 h-[80px] bg-gradient-to-b from-white to-blue-500 rounded-b-[10px] z-0"></div>
+                    <img class="w-[90px] h-[90px] mx-auto mt-2 relative z-10" src="https://2.bp.blogspot.com/-WSBm5s-SXJA/WGMwNMeAfJI/AAAAAAAABHM/BTT5cbgbChsamZP8EHOK3Su7rFv55GXgACLcB/s1600/Pendaftaran%2BPolinema%2B.png" alt="Logo POLINEMA" />
+                    <div class="absolute inset-x-0 bottom-0 text-center text-white text-xs font-semibold font-['Roboto'] leading-[14px] pb-2 z-10">
+                        Politeknik Negeri Malang 
+                    </div>
                 </div>
             </div>
         </div>
